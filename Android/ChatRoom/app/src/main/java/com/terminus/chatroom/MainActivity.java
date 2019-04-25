@@ -101,7 +101,8 @@ public class MainActivity extends AppCompatActivity {
         OkHttpClient client = new OkHttpClient();
 
 
-        Request request = new Request.Builder().url("ws://192.168.43.8:8080").build();
+        //replace x.x.x.x with your machine's IP Address
+        Request request = new Request.Builder().url("ws://x.x.x.x:8080").build();
 
 
         SocketListener socketListener = new SocketListener(this);
